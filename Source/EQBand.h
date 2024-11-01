@@ -30,13 +30,13 @@ public:
     void paint(juce::Graphics& g) override;
     
 private:
+    juce::Slider bandSlider;
+    juce::Label bandLabel;
     std::vector<juce::IIRFilter> filters;
     std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> gainAttachment;
     size_t numChannels;
     int sampleRate;
     float frequency, gain;
-    juce::Slider bandSlider;
-    juce::Label bandLabel;
 };
 
 
