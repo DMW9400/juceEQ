@@ -25,7 +25,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout JuceEQAudioProcessor::create
         layout.add(std::make_unique<juce::AudioParameterFloat>(
             paramID,                                    // Parameter ID
             paramName,                                  // Parameter name
-            juce::NormalisableRange<float>(0.0f, 2.0f), // Range
+            juce::NormalisableRange<float>(0.1f, 2.0f), // Range
             1.0f                                        // Default value
         ));
     }
