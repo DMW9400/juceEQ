@@ -46,19 +46,6 @@ JuceEQAudioProcessor::JuceEQAudioProcessor()
         parameters(*this, nullptr, "PARAMETERS", createParameterLayout())
 #endif
 {
-//    numChannels = getTotalNumOutputChannels();
-//    
-//    for (int i = 0; i < 10; ++i)
-//    {
-//        juce::String paramID = "GainParam_" + juce::String(i);
-//        float currentGain = parameters.getRawParameterValue(paramID)->load();
-//
-//        // Initialize each EQBand with its center frequency
-//        eqBands[i].prepare(centerFrequencies[i], 44100.0, currentGain, numChannels); // sampleRate will be updated in prepareToPlay
-//
-//        // Attach each EQBand's slider to its corresponding parameter
-//        eqBands[i].initializeVTS(parameters, paramID);
-//    }
 }
 
 JuceEQAudioProcessor::~JuceEQAudioProcessor()
